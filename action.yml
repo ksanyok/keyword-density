@@ -1,0 +1,16 @@
+name: "Keyword Density Checker by PromoPilot"
+description: "Check keyword density and placement of a page or a text file."
+author: "Alexandr Krikun"
+branding:
+  icon: "bar-chart-2"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the keyword-density CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run keyword-density
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}

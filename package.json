@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/keyword-density",
+  "version": "1.0.0",
+  "description": "Analyse keyword density from the command line: top words and 2-3 word phrases of a web page, HTML file or plain text with counts and density, stop words for English, Ukrainian, Russian, Polish and German, and a target keyword check (density, title, H1, description, first 100 words). Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "keyword-density",
+    "keyword-analysis",
+    "seo",
+    "content-optimization",
+    "ngrams",
+    "text-analysis",
+    "word-frequency",
+    "copywriting",
+    "content-marketing",
+    "seo-tools",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/keyword-density.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=keyword-density",
+  "bugs": {
+    "url": "https://github.com/ksanyok/keyword-density/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/keyword-density.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "keyword-density": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
