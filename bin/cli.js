@@ -20,7 +20,7 @@ Options:
   --json                  Print JSON
   -h, --help              Show this help
 
-Online version (no install): https://promopilot.link/en/tools/keyword-density.php
+Online version (no install): https://promopilot.link/en/tools/keyword-density.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=keyword-density
 `;
 
 const args = process.argv.slice(2);
